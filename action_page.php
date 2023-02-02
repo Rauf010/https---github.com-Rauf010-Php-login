@@ -1,20 +1,13 @@
 <html>
 <?php
+echo "<p>hello world</p> <br>";
 
-    echo $_GET['voornaam'];
-    $username = $_GET['voornaam'];
-    /* Print username. */
+$username = $_POST['username'];
 
-    echo "<br>";
+$password = $_POST['password'];
 
-    echo $_GET['password'];
-    $password = $_GET['password'];
-    /* Print password. */
-
-    if ($username < 8) {
-        echo "error";
-    }
-
+echo "Username: $username<br>";
+echo "Password: $password";
 ?>
 
 </html>

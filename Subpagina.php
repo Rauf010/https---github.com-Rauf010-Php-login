@@ -20,7 +20,7 @@
     echo date("l jS \of F Y h:i:s A");
     ?>
 
-    <form action="action_page.php">
+    <form action="action_page.php"  method="POST">
         <br>
         <label for="vn">Voornaam:</label> <br>
         <input type="text" id="vn" name="voornaam" value="Rauf"> <br>
