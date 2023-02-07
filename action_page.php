@@ -1,20 +1,28 @@
-<html>
 <?php
+$a = array ("Rauf", "Azfar", "Ayoub" );
+echo '<table border="1" width="200">';
+foreach($a as $name)
+{echo "<tr><td>$name</td><td>Rotterdam</td></tr>";
+}
+echo "</table>" . "<br>"; 
 
-    echo $_GET['voornaam'];
-    $username = $_GET['voornaam'];
-    /* Print username. */
+$a = array("Rauf", "Azfar", "Ayoub" );
 
-    echo "<br>";
+echo '<table border="1" width="200">';
 
-    echo $_GET['password'];
-    $password = $_GET['password'];
-    /* Print password. */
+for ($i=0; $i < count($a); $i++)
 
-    if ($username < 8) {
-        echo "error";
-    }
+ { echo "<tr><td>{$a[$i]}</td><td>Rotterdam</td></tr>";}
+echo "</table>";
 
+
+
+
+echo date("") . "<br>";
+echo date("l jS \of F Y h:i:s A") . "<br>";
+echo "<p>hello world</p> <br>";
+$username = $_POST['username'];
+$password = $_POST['password'];
+echo "Username: $username<br>";
+echo "Password: $password";
 ?>
-
-</html>

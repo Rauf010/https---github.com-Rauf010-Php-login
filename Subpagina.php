@@ -20,13 +20,12 @@
     echo date("l jS \of F Y h:i:s A");
     ?>
 
-    <form action="action_page.php">
-        <br>
-        <label for="vn">Voornaam:</label> <br>
-        <input type="text" id="vn" name="voornaam" value="Rauf"> <br>
-        <label for="pw">Password:</label> <br>
-        <input type="password" id="pw" name="password" value="Gelukt"> <br> <br>
-        <input type="submit" value="Click.">
+<form action="action_page.php" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" id="username" value="rauf" name="username"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" value="yes" name="password"><br><br>
+  <input type="submit" value="Submit">
     </form>
 
         <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
