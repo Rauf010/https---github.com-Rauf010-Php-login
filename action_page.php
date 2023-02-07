@@ -8,14 +8,13 @@ echo "</table>" . "<br>";
 
 $a = array("Rauf", "Azfar", "Ayoub" );
 
+
 echo '<table border="1" width="200">';
 
 for ($i=0; $i < count($a); $i++)
 
  { echo "<tr><td>{$a[$i]}</td><td>Rotterdam</td></tr>";}
 echo "</table>";
-
-
 
 
 echo date("") . "<br>";
